@@ -1,0 +1,258 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #e7d0a4 url(images/kant-links.jpeg) left repeat-y;
+  min-width: 855px
+}
+
+#non-footer {
+  position: relative;
+  min-height: 100%;
+  background: url(images/kant-rechts.jpeg) right repeat-y transparent;
+}
+
+.error {
+  color: red;
+}
+
+* html #non-footer {
+  width: expression((document.documentElement.clientWidth < 855) ? "855px" : "auto");
+  height: 100%;
+}
+
+#content {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 38px;
+}
+
+#content:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html #content {height: 1%;}
+#content {display: block;}
+/* End hide from IE-mac */
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 179px;
+  background: url(images/hoofding-achtergrond.jpeg) repeat-x right;
+}
+
+#header-left {
+  position: relative;
+  width: 855px;
+  height: 179px;
+  background: url(images/hoofding.jpeg) no-repeat left top;
+}
+
+#header-rightwrap {
+  position: relative;
+  width: 100%;
+  height: 179px;
+  background: url(images/hoofding-rechts.jpeg) no-repeat right top;
+}
+
+#footer {
+  position: relative;
+  clear: both;
+  width: 100%;
+  margin-top: -39px;
+  background: url(images/voetting-achtergrond.jpeg) repeat-x;
+  height: 39px;
+}
+
+#footer-left {
+  position: relative;
+  margin: 0;
+  height: 39px;
+  width: 855px;
+  background: url(images/voetting-links.jpeg) left no-repeat;
+}
+
+#footer-rightwrap {
+  position: relative;
+  height: 39px;
+  width: 100%;
+  background: url(images/voetting-rechts.jpeg) right top no-repeat transparent;
+}
+
+#hoofding {
+  position: absolute;
+  top: 133px;
+  left: 340px;
+  height: 39px;
+  padding-right: 30px;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: #EEFDE8;
+  font-size: 15pt;
+  font-weight: normal;
+  font-style: italic;
+  vertical-align: middle;
+  line-height: 39px;
+}
+
+#navigation-bar {
+  position: relative;
+  display: inline; /* IE double floatmargin bugfix */
+  float: left;
+  margin-top: -50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: -10px;
+  width: 190px;
+}
+
+#main {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 270px;
+  margin-right: 50px;
+}
+
+table {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td.descr {
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 3em;
+  color: #7C2E2E;
+}
+
+td.comment {
+  padding-left: 0;
+  padding-top: 3px;
+  font-family: Verdana, Sans-Serif;  
+  font-size: 0.825em;
+}
+
+td {
+  padding: 0 0.5em;
+}
+
+td.actions {
+  padding: 0;
+  text-align: right;
+}
+
+tr td.comment {
+  padding: 10px;
+  padding-left: 1.5em;
+}
+
+tr.item td {
+  border-top: 1px solid #8D6025;
+  background-color: #E0CB9B;
+  border-bottom: 1px solid #D2BE92;
+  padding: 5px 0.5em;
+}
+
+#main a {
+ color: #7C2E2E;
+ text-decoration: none;
+}
+
+#main a:hover {
+ color: #7C2E2E;
+ text-decoration: underline;
+}
+
+
+#navigation-bar{
+  position: relative;
+  padding-left: 1em;
+  color: #EEDFBD;
+  font-family: Verdana, Sans-Serif;
+}
+
+#navigation-bar a{
+  color: #EEDFBD;
+  text-decoration: none;
+}
+
+#navigation-bar a:hover{
+  color: #DBAD77;
+}
+
+#navigation-bar h3{
+  padding: 0;
+  margin: 0.6em 0 0.3em 0;
+  color: #EEDFBD;
+  font-size: 0.9em;
+}
+
+#navigation-bar ul {
+  list-style-type: none;
+  margin: 0 0 1em 1em;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+#navigation-bar li {
+}
+
+form {
+  position: relative;
+  margin: 0 0 2em 0;
+}
+
+fieldset {
+  border: 1px solid #8D6025;
+  padding: 1em;
+}
+
+form label {
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 5px 0 0 0;
+  width: 130px;
+}
+
+input.text, textarea {
+  border-top: 1px solid #8D6025;
+  border-left: 1px solid #8D6025;
+  background-color: #F2E4C4;
+  border-bottom: 1px solid #D2BE92;
+  border-right: 1px solid #D2BE92;
+  padding: 5px 0.5em;
+}
+
+input.submit {
+  background-color: #e7d0a4;
+}
+
+textarea {
+  font-family: Verdana, sans-serif;
+}
+
+legend {
+  color:  #7C2E2E;
+  font-weight: bold;
+}
+
+div.form-item {
+  clear: both;
+  margin-bottom: 0.5em;
+}
